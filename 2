@@ -1,0 +1,84 @@
+
+'''Написать 12 функций по переводу:
+1. Дюймы в сантиметры
+2. Сантиметры в дюймы
+3. Мили в километры
+4. Километры в мили
+5. Фунты в килограммы
+6. Килограммы в фунты
+7. Унции в граммы
+8. Граммы в унции
+9. Галлон в литры
+10. Литры в галлоны
+11. Пинты в литры
+12. Литры в пинты
+Примечание: функция принимает на вход число и возвращает конвертированное число'''
+
+def du(n):
+    res=n/0.394
+    return(print(f"{res} сантиметров"))
+def sm(n):
+    res=n*0.394
+    return(print(f"{res} дюймов"))
+def mile(n):
+    res=n*1.609
+    return(print(f"{res} км"))
+def km(n):
+    res=n/1.609
+    return(print(f"{res} миль"))
+def funt(n):
+    res=n/2.205
+    return(print(f"{res} кг"))
+def kg(n):
+    res=n*2.205
+    return(print(f"{res} фунтов"))
+def un(n):
+    res=n/0.0352
+    return(print(f"{res} грамм"))
+def gr(n):
+    res=n*0.0352
+    return(print(f"{res} унций")) 
+def gall(n):
+    res=n/0.264
+    return(print(f"{res} литров"))  
+def litr_gall(n):
+    res=n*0.264
+    return(print(f"{res} галлонов"))    
+def pint(n):
+    res=n*0.568
+    return(print(f"{res} галлонов"))  
+def litr_pint(n):
+    res=n/0.568
+    return(print(f"{res} пинт")) 
+def main():
+    i=0
+    while i==0:
+       perevod=str(input('введите номер операции от 0 до 12 '))
+       n=int(input("введите колличество "))
+       if perevod=="1":
+          du(n)
+       if perevod=="3":
+          sm(n)
+       if perevod=="4":
+          mile(n)
+       if perevod=="5":
+          km(n)
+       if perevod=="6":
+          funt(n)
+       if perevod=="7":
+          kg(n)
+       if perevod=="8":
+           un(n)
+       if perevod=="9":
+          gr(n)
+       if perevod=="10":
+          gall(n)
+       if perevod=="11":
+          litr_gall(n)
+       if perevod=="12":
+          pint(n)
+       if perevod=="0":
+           break
+       
+if __name__ == '__main__':
+    main()
